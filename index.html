@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>EMI Calculator</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+  <div class="container">
+      <form id="forms">
+          <h2>EMI Calculator</h2>
+          <div class="line"></div>
+            <div class="buttons">
+            <button class="btn colorses" id="btn1">Home Loan</button>
+            <button class="btn colorss" id="btn2">Personal Loan</button>
+            <button class="btn colorss" id="btn3">Car Loan</button>
+          </div>
+          <div class="input1">
+            <label class="label1" id="lab1">Loan Amount</label>
+            <input type="number" class="input" id="inp1" min="1">
+            <span class="rep">₹</span>
+          </div>
+          <input type="range"  class="range" value="0" min="1" max="20000000" id="ranges">
+      
+          <div class="input1">
+            <label class="label1" id="lab2">Interest Rate</label>
+            <input type="number" class="input" id="inp2" min="1">
+            <span class="per">%</span>
+          </div>
+          <input type="range" step="1" class="range" value="0" min="1" max="20" id="range">
+          <div class="input1">
+            <label class="label1" id="lab3">Loan Tenure</label>
+            <input type="number" class="input" id="inp3" min="1">
+            <span class="year">Y</span>
+            <span class="Month">M</span>
+          </div>
+          <input type="range" step="1" class="range" value="0" min="1" max="30" id="rangess">
+          <div class="line2"></div>
+          <div class="box">
+            <div class="box1">
+              <p class="loan">Loan EMI</p>
+              <div class="part1">
+                <p id="result1">₹<span class="res1">0</span></p>
+              </div>
+            </div>  
+            <div class="boxes">
+                <div class="box2">
+                  <p class="loan1">Total Interest payable</p>
+                  <div class="part1">
+                    <p id="result2">₹<span class="res2">0</span></p>  
+                  </div>                 
+                </div>
+                <div class="box1">
+                <p class="loan2">Total Payment(P+I)</p>
+                <div class="part1">
+                  <p id="result3">₹<span class="res3">0</span></p>          
+                </div>
+            </div>
+             
+          </div>
+          <!-- </div> -->
+        <!-- <div class="lines">9</div> -->
+            
+              
+              
+          </div>
+          </div>
+      </form>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="calc.js"></script>
+</body>
+
+</html>
